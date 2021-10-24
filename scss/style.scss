@@ -1,0 +1,97 @@
+@import "vars";
+@import "reset";
+@import "global";
+.header {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 27px 0px 34px;
+  height: 100vh;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__contact {
+    display: flex;
+  }
+  &__contact-tel {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    margin-right: 20px;
+    display: inline-block;
+  }
+  &__contact-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #ffffff;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    margin-left: 20px;
+  }
+  &__list-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+  }
+}
+.header-info {
+  padding-top: 88px;
+  padding-left: 37px;
+  &__title {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 73px;
+    color: #fff;
+    text-shadow: 0px 0px 166px #000000;
+    margin-bottom: 30px;
+  }
+  &__content {
+    width: 512px;
+    background: #fff;
+    opacity: 0.9;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 166px rgba(0, 0, 0, 0.2));
+    padding: 38px 33px 34px;
+    display: flex;
+    margin-bottom: 98px;
+  }
+  &__content-img {
+    margin-right: 28px;
+  }
+  &__content-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+  }
+  &__link {
+    background: linear-gradient(90deg, #4c6071 0%, #55bdea 100%);
+    box-shadow: 0px 0px 166px rgba(0, 0, 0, 0.2), 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+  }
+}
+@import "media";
