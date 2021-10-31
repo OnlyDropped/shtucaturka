@@ -1,0 +1,231 @@
+@media (max-width: 375px) {
+  .header {
+    padding: 67px 0 81px;
+    height: auto;
+  }
+  .menu {
+    &__list {
+      display: none;
+    }
+  }
+  .header-nav {
+    &__contact {
+      flex-direction: column;
+    }
+    &__contact-tel {
+      margin-right: 0;
+    }
+  }
+  .header-info {
+    padding-top: 85px;
+    padding-left: 0px;
+    &__title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 130%;
+      color: #fff;
+      text-shadow: 0px 0px 131px #000;
+      margin-bottom: 25px;
+    }
+    &__content {
+      width: 350px;
+      padding: 20px;
+      margin-bottom: 105px;
+    }
+    &__content-text {
+      font-size: 16px;
+      line-height: 150%;
+    }
+    &__content-img {
+      margin-right: 20px;
+    }
+  }
+  .about {
+    padding: 178px 0 117px;
+    background-position-y: bottom;
+    &::after {
+      background-repeat: no-repeat;
+      background-position-x: right;
+    }
+    &__wrapper {
+      padding-left: 0;
+    }
+    &__info-title {
+      text-align: center;
+      font-size: 24px;
+      line-height: 130%;
+      color: #262626;
+      margin-bottom: 30px;
+    }
+  }
+  .why-me {
+    &__title {
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__wrapper {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    &__card {
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      padding: 20px;
+    }
+    &__card-logo {
+      margin-bottom: 0;
+    }
+  }
+  .portfolio {
+    padding: 233px 0 100px;
+    &::after {
+      background-position-x: center;
+    }
+    &__title {
+      margin-left: 0;
+      padding-bottom: 94px;
+      text-align: center;
+    }
+    &__link-box {
+      display: none;
+    }
+  }
+  .portfolio-slider {
+    &__content {
+      width: 315px;
+      height: 237px;
+      object-fit: cover;
+    }
+    .slick-next,
+    .slick-arrow {
+      padding: 0px;
+      border: none;
+      background-color: transparent;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: -74px;
+      left: 0;
+      cursor: pointer;
+    }
+    .slick-arrow {
+      transform: translateX(148px);
+    }
+    .slick-next {
+      transform: translateX(200px);
+    }
+  }
+  .catalog {
+    padding: 224px 0 120px;
+    &__title {
+      margin-bottom: 94px;
+      margin-left: 0;
+      text-align: center;
+    }
+    &__inner {
+      display: grid;
+      column-gap: 20px;
+    }
+    &__box {
+      width: 285px;
+    }
+    &__item {
+      width: 285px;
+    }
+    &__item-img {
+      width: 285px;
+      height: 207px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .slick-next,
+    .slick-arrow {
+      padding: 0px;
+      border: none;
+      background-color: transparent;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: -74px;
+      left: 0;
+      cursor: pointer;
+    }
+    .slick-arrow {
+      transform: translateX(148px);
+    }
+    .slick-next {
+      transform: translateX(200px);
+    }
+    .slick-center {
+      transition: all 0.6s;
+    }
+  }
+  .review {
+    padding: 60px 0;
+    &__title {
+      margin-left: 0;
+      margin-bottom: 94px;
+      text-align: center;
+    }
+    &__item {
+      width: 285px;
+    }
+    .slick-next,
+    .slick-arrow {
+      padding: 0px;
+      border: none;
+      background-color: transparent;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: -74px;
+      left: 0;
+      cursor: pointer;
+    }
+    .slick-arrow {
+      transform: translateX(148px);
+    }
+    .slick-next {
+      transform: translateX(200px);
+    }
+    .slick-center {
+      margin: 0 auto;
+    }
+  }
+  .info {
+    padding-top: 200px;
+    padding-bottom: 8px;
+    &__inner {
+      flex-direction: column;
+    }
+  }
+  .info-form {
+    &__link {
+      width: 254px;
+      margin: 0 auto 30px;
+      display: block;
+    }
+  }
+  .footer {
+    padding: 72px 0 52px;
+    &__inner {
+      flex-direction: column;
+    }
+    &__contact {
+      margin: 0 auto 15px;
+      text-align: center;
+    }
+    &__info {
+      margin: 0 auto 15px;
+      text-align: center;
+    }
+    &__map{
+      iframe{
+        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+}

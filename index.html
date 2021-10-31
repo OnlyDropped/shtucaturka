@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&family=Manrope:wght@600&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&family=Manrope:wght@600&family=Roboto:wght@300;400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
-</head>
-
-<body>
-
+  <body>
   <header class="header">
     <div class="container">
       <div class="header-nav">
@@ -160,7 +159,6 @@
               d="M131.354 42.5452V44.6181H133.107V45.3514H131.354V50.7468C131.354 51.1958 131.438 51.5301 131.605 51.7496C131.777 51.9691 132.061 52.0788 132.458 52.0788C132.614 52.0788 132.867 52.0539 133.216 52.004L133.255 52.7374C133.01 52.8222 132.677 52.8646 132.254 52.8646C131.613 52.8646 131.146 52.6875 130.854 52.3333C130.562 51.9741 130.416 51.4477 130.416 50.7543V45.3514H128.859V44.6181H130.416V42.5452H131.354Z"
               stroke="white" stroke-width="0.6" mask="url(#path-4-outside-1_3:51)" />
           </svg>
-
         </a>
         <nav class="menu">
           <ul class="menu__list">
@@ -196,6 +194,8 @@
       </div>
     </div>
   </header>
+  
+
   <section class="about">
     <div class="container">
       <div class="about__wrapper">
@@ -215,6 +215,8 @@
       </div>
     </div>
   </section>
+ 
+
   <section class="why-me">
     <div class="container">
       <h6 class="why-me__title">Почему мы?</h6>
@@ -227,10 +229,11 @@
             </svg>
 
           </div>
-          <h6 class="why-me__card-title">Первоклассное качество</h6>
+          <div class="why-me__box">          <h6 class="why-me__card-title">Первоклассное качество</h6>
           <p class="why-me__card-text">Высокое качество исполнения реализованных проектов и благодарные отзывы
             счастливых клиентов позволяют утверждать что
-            декорирование стен – наше призвание.</p>
+            декорирование стен – наше призвание.</p></div>
+
         </div>
         <div class="why-me__card">
           <div class="why-me__card-logo">
@@ -250,9 +253,12 @@
                 stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
-          <h6 class="why-me__card-title">Материалы лучших брендов</h6>
-          <p class="why-me__card-text">Подбор материалов берем на себя. Работаем с такими Торговыми Марками как Feidal,
-            Spiver, Oikos, elf decor, San Marco</p>
+          <div class="why-me__box">
+            <h6 class="why-me__card-title">Материалы лучших брендов</h6>
+            <p class="why-me__card-text">Подбор материалов берем на себя. Работаем с такими Торговыми Марками как
+              Feidal,
+              Spiver, Oikos, elf decor, San Marco</p>
+          </div>
         </div>
         <div class="why-me__card">
           <div class="why-me__card-logo">
@@ -271,10 +277,13 @@
             </svg>
 
           </div>
-          <h6 class="why-me__card-title">Скорость выполнения работ</h6>
-          <p class="why-me__card-text">Приступаем к выполнению работ по Вашему заказку сразу после выезда специалиста на
-            осмотр объекта. Результат от 3-х
-            рабочих дней.</p>
+          <div class="why-me__box">
+            <h6 class="why-me__card-title">Скорость выполнения работ</h6>
+            <p class="why-me__card-text">Приступаем к выполнению работ по Вашему заказку сразу после выезда специалиста
+              на
+              осмотр объекта. Результат от 3-х
+              рабочих дней.</p>
+          </div>
         </div>
         <div class="why-me__card">
           <div class="why-me__card-logo">
@@ -283,17 +292,21 @@
                 d="M25.389 23.6943C23.944 22.2488 22.1028 21.2644 20.0982 20.8654C18.0937 20.4664 16.0158 20.6709 14.1275 21.4529C12.2391 22.2349 10.6251 23.5594 9.4895 25.2587C8.35392 26.9581 7.7478 28.9561 7.7478 31C7.7478 33.0438 8.35392 35.0418 9.4895 36.7412C10.6251 38.4406 12.2391 39.765 14.1275 40.547C16.0158 41.329 18.0937 41.5335 20.0982 41.1345C22.1028 40.7356 23.944 39.7511 25.389 38.3056C27.6819 36.2262 29.5825 33.7517 31 31C32.4176 28.2483 34.3181 25.7737 36.611 23.6943C38.056 22.2488 39.8972 21.2644 41.9018 20.8654C43.9064 20.4664 45.9842 20.6709 47.8726 21.4529C49.7609 22.2349 51.3749 23.5594 52.5105 25.2587C53.6461 26.9581 54.2522 28.9561 54.2522 31C54.2522 33.0438 53.6461 35.0418 52.5105 36.7412C51.3749 38.4406 49.7609 39.765 47.8726 40.547C45.9842 41.329 43.9064 41.5335 41.9018 41.1345C39.8972 40.7356 38.056 39.7511 36.611 38.3056C34.3181 36.2262 32.4176 33.7517 31 31C29.5825 28.2483 27.6819 25.7737 25.389 23.6943"
                 stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-
-
           </div>
-          <h6 class="why-me__card-title">Бесконечный творческий потенциал</h6>
-          <p class="why-me__card-text">Наша команда - это не только крутые специалисты, но и креативные творческие люди,
-            которые знают как воплотить в жизнь
-            Ваши идеи.</p>
+          <div class="why-me__box">
+            <h6 class="why-me__card-title">Бесконечный творческий потенциал</h6>
+            <p class="why-me__card-text">Наша команда - это не только крутые специалисты, но и креативные творческие
+              люди,
+              которые знают как воплотить в жизнь
+              Ваши идеи.</p>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
+  
+
   <section class="portfolio">
     <div class="container">
       <div class="portfolio__inner">
@@ -346,7 +359,7 @@
       </div>
     </div>
   </section>
-  <!--
+<!--
   <section class="services">
     <div class="container">
       <div class="services__inner">
@@ -422,67 +435,81 @@
     </div>
   </section>
 -->
-
-  <section class="catalog">
-    <div class="container">
-      <h3 class="catalog__title">Каталог фактур</h3>
-      <div class="catalog__inner">
-        <div class="catalog__item">
-          <div class="catalog__item-content">
-            <img class="catalog__item-img" src="img/catalog/1.png" alt="">
+    <section class="catalog">
+      <div class="container">
+        <h3 class="catalog__title">Каталог фактур</h3>
+        <div class="catalog__inner">
+          <div class="catalog__box">
+            <div class="catalog__item">
+              <div class="catalog__item-content">
+                <img class="catalog__item-img" src="img/catalog/1.png" alt="" />
+              </div>
+              <a class="catalog__item-title" href="#">GROTTO</a>
+            </div>
           </div>
-          <a class="catalog__item-title" href="#">GROTTO</a>
+          <div class="catalog__box">
+            <div class="catalog__item">
+              <div class="catalog__item-content">
+                <img class="catalog__item-img" src="img/catalog/2.png" alt="" />
+              </div>
+              <a class="catalog__item-title" href="#">MARMORINO</a>
+            </div>
+          </div>
+          <div class="catalog__box">
+            <div class="catalog__item">
+              <div class="catalog__item-content">
+                <img class="catalog__item-img" src="img/catalog/3.png" alt="" />
+              </div>
+              <a class="catalog__item-title" href="#">VENEZIANO</a>
+            </div>
+          </div>
+          <div class="catalog__box">
+            <div class="catalog__item">
+              <div class="catalog__item-content">
+                <img class="catalog__item-img" src="img/catalog/4.png" alt="" />
+              </div>
+              <a class="catalog__item-title" href="#">MAGIE</a>
+            </div>
+          </div>
+          <div class="catalog__box">
+            <div class="catalog__item">
+              <div class="catalog__item-content">
+                <img class="catalog__item-img" src="img/catalog/5.png" alt="" />
+              </div>
+              <a class="catalog__item-title" href="#">LAVA</a>
+            </div>
+          </div>
+          <div class="catalog__box">
+            <div class="catalog__item">
+              <div class="catalog__item-content">
+                <img class="catalog__item-img" src="img/catalog/6.png" alt="" />
+              </div>
+              <a class="catalog__item-title" href="#">PERSIA</a>
+            </div>
+          </div>
+          <div class="catalog__box">
+            <div class="catalog__item">
+              <div class="catalog__item-content">
+                <img class="catalog__item-img" src="img/catalog/7.png" alt="" />
+              </div>
+              <a class="catalog__item-title" href="#">SAHARA GOLD</a>
+            </div>
+          </div>
+          <div class="catalog__box">
+            <div class="catalog__item">
+              <div class="catalog__item-content">
+                <img class="catalog__item-img" src="img/catalog/8.png" alt="" />
+              </div>
+              <a class="catalog__item-title" href="#">TRAVERTINO</a>
+            </div>
+          </div>
         </div>
-        <div class="catalog__item">
-          <div class="catalog__item-content">
-            <img class="catalog__item-img" src="img/catalog/2.png" alt="">
-          </div>
-          <a class="catalog__item-title" href="#">MARMORINO</a>
-        </div>
-        <div class="catalog__item">
-          <div class="catalog__item-content">
-            <img class="catalog__item-img" src="img/catalog/3.png" alt="">
-          </div>
-          <a class="catalog__item-title" href="#">VENEZIANO</a>
-        </div>
-        <div class="catalog__item">
-          <div class="catalog__item-content">
-            <img class="catalog__item-img" src="img/catalog/4.png" alt="">
-          </div>
-          <a class="catalog__item-title" href="#">MAGIE</a>
-        </div>
-        <div class="catalog__item">
-          <div class="catalog__item-content">
-            <img class="catalog__item-img" src="img/catalog/5.png" alt="">
-          </div>
-          <a class="catalog__item-title" href="#">LAVA</a>
-        </div>
-        <div class="catalog__item">
-          <div class="catalog__item-content">
-            <img class="catalog__item-img" src="img/catalog/6.png" alt="">
-          </div>
-          <a class="catalog__item-title" href="#">PERSIA</a>
-        </div>
-        <div class="catalog__item">
-          <div class="catalog__item-content">
-            <img class="catalog__item-img" src="img/catalog/7.png" alt="">
-          </div>
-          <a class="catalog__item-title" href="#">SAHARA GOLD</a>
-        </div>
-        <div class="catalog__item">
-          <div class="catalog__item-content">
-            <img class="catalog__item-img" src="img/catalog/8.png" alt="">
-          </div>
-          <a class="catalog__item-title" href="#">TRAVERTINO</a>
+        <div class="catalog__content">
+          <a class="catalog__link" href="#">Показать больше</a>
         </div>
       </div>
-      <div class="catalog__content">
-        <a class="catalog__link" href="#">Показать больше</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="review">
+    </section>
+    <section class="review">
     <div class="container">
       <h5 class="review__title">Видеоотзывы</h5>
       <div class="review-wrapper">
@@ -574,6 +601,7 @@
       </div>
     </div>
   </section>
+ 
   <section class="info">
     <div class="container">
       <div class="info__inner">
@@ -666,10 +694,8 @@
       </div>
     </div>
   </footer>
-  -->
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

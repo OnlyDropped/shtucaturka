@@ -9,6 +9,7 @@
   padding: 27px 0px 34px;
   height: 100vh;
 }
+
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -34,6 +35,7 @@
     color: #ffffff;
   }
 }
+
 .menu {
   &__list {
     display: flex;
@@ -50,6 +52,7 @@
     color: #fff;
   }
 }
+
 .header-info {
   padding-top: 88px;
   padding-left: 37px;
@@ -94,6 +97,7 @@
     color: #fff;
   }
 }
+
 .about {
   padding: 260px 0 158px;
   background-image: url("../img/about.png");
@@ -144,6 +148,7 @@
     color: #000;
   }
 }
+
 .why-me {
   background-color: #4c6071;
   padding: 60px 0;
@@ -206,6 +211,7 @@
     text-align: left;
   }
 }
+
 .portfolio {
   padding: 290px 0 177px;
   position: relative;
@@ -250,6 +256,7 @@
     border-radius: 10px;
   }
 }
+
 .portfolio-slider {
   margin-bottom: 80px;
   &__inner {
@@ -300,6 +307,7 @@
     transform: translateX(-100px);
   }
 }
+
 .services {
   background-color: #4c6071;
   padding: 60px 0;
@@ -318,6 +326,7 @@
     max-width: 790px;
   }
 }
+
 .services-slider {
   &__item {
     background-color: #fff;
@@ -404,6 +413,7 @@
     right: 80px;
   }
 }
+
 .catalog {
   padding: 255px 0 150px;
   background-image: url("../img/after.svg");
@@ -483,6 +493,7 @@
     z-index: 1;
   }
 }
+
 .review-wrapper {
   max-width: 1110px;
   margin: 0 auto;
@@ -539,6 +550,7 @@
     transform: translateX(-100px);
   }
 }
+
 .info {
   padding: 296px 0 200px;
   position: relative;
@@ -563,6 +575,7 @@
     justify-content: space-between;
   }
 }
+
 .info-form {
   max-width: 410px;
   &__title {
@@ -605,6 +618,7 @@
     color: #fff;
   }
 }
+
 .footer {
   padding: 50px 0 57px;
   background-color: #4c6071;
@@ -685,4 +699,5 @@
     text-align: right;
   }
 }
+
 @import "media";
