@@ -2,12 +2,23 @@ $('.slider').slick({
     arrows: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 7000,
+    //autoplay: true,
+    //autoplaySpeed: 7000,
     prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg" alt=""></button>',
     draggable: false,
-    responsive: [{
+    responsive: [
+            {
+        breakpoint: 426,
+        settings: {
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: false,
+            centerPadding: '10px'
+        }
+    },
+      {
         breakpoint: 376,
         settings: {
             arrows: true,
@@ -16,7 +27,18 @@ $('.slider').slick({
             centerMode: true,
             centerPadding: '10px'
         }
-    }]
+    },
+          {
+        breakpoint: 321,
+        settings: {
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: false,
+        }
+    }
+
+  ]
 });
 $('.review-wrapper').slick({
     arrows: true,
@@ -24,9 +46,20 @@ $('.review-wrapper').slick({
     slidesToScroll: 1,
     //autoplay: true,
     //autoplaySpeed: 7000,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg" alt=""></button>',
-    responsive: [{
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/prev-white.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/next-white.svg" alt=""></button>',
+    responsive: [
+            {
+        breakpoint: 426,
+        settings: {
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '57px'
+        }
+    },
+      {
         breakpoint: 376,
         settings: {
             arrows: true,
@@ -35,7 +68,18 @@ $('.review-wrapper').slick({
             centerMode: true,
             centerPadding: '20px'
         }
-    }]
+    },
+          {
+        breakpoint: 321,
+        settings: {
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '10px'
+        }
+    }
+  ]
 });
 $('.services-slider').slick({
     arrows: true,
@@ -44,14 +88,16 @@ $('.services-slider').slick({
     nextArrow: '<button type="button" class="slick-next">Далее</button>',
 });
 $('.catalog__inner').slick({
-    arrows: false,
+    arrows: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg" alt=""></button>',
     draggable: false,
     responsive: [{
             breakpoint: 1441,
             settings: {
-                settings: 'unslick'
+                arrows: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
             }
         },
         {
@@ -69,7 +115,11 @@ $('.catalog__inner').slick({
         {
             breakpoint: 426,
             settings: {
-                settings: "unslick"
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '60px'
             }
         },
         {
@@ -79,6 +129,16 @@ $('.catalog__inner').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
+                centerPadding: '20px'
+            }
+        },
+                {
+            breakpoint: 321,
+            settings: {
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
                 centerPadding: '20px'
             }
         }

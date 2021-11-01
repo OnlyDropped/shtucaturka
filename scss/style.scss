@@ -461,6 +461,23 @@
     box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
   }
+  .slick-prev,
+  .slick-next{
+    position: absolute;
+    top: -45px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+  .slick-prev{
+    left: 0;
+  }
+  .slick-next{
+    left: 25px;
+  }
 }
 
 .review {
@@ -493,12 +510,13 @@
     z-index: 1;
   }
 }
-
 .review-wrapper {
   max-width: 1110px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 6;
   &__item {
     max-width: 255px;
   }
