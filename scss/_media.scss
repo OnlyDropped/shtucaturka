@@ -1,3 +1,104 @@
+@media (max-width: 1024px) {
+  .portfolio {
+    .slick-initialized .slick-slide {
+      display: flex;
+      justify-content: center;
+    }
+    .portfolio-slider__content {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+  .menu {
+    &__list {
+      align-items: center;
+      flex-direction: column;
+    }
+    &__list-item + .menu__list-item {
+      margin-left: 0;
+    }
+  }
+  .header-nav {
+    &__contact {
+      flex-direction: column;
+    }
+    &__contact-tel {
+      margin-right: 0;
+    }
+  }
+  .about {
+    padding: 170px 0 190px;
+    background-position-y: bottom;
+    &__wrapper {
+      padding-left: 0;
+    }
+    &__info {
+      margin-left: auto;
+    }
+    &__info-title {
+      text-align: center;
+    }
+  }
+  .why-me {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 35px;
+    }
+    &__card {
+      width: 47%;
+      padding: 20px 30px;
+    }
+    &__card-logo {
+      margin-bottom: 30px;
+    }
+    &__card-title,
+    &__card-text {
+      text-align: center;
+    }
+  }
+  .info {
+    padding: 200px 0 50px;
+    &__inner {
+      flex-direction: column;
+      width: 100%;
+    }
+    .info-form {
+      margin: 0 auto 20px;
+      &__link {
+        margin: 0 auto;
+        width: 254px;
+        display: block;
+      }
+    }
+  }
+  .footer {
+    &__inner {
+      flex-direction: column;
+    }
+    &__contact,
+    &__info,
+    &__info-title,
+    &__info-tel {
+      text-align: center;
+    }
+    &__info {
+      margin: 50px auto;
+    }
+    &__contact-list {
+      justify-content: center;
+    }
+    &__map {
+      margin: 0 auto;
+    }
+  }
+}
 @media (max-width: 425px) {
   .header {
     height: auto;
@@ -131,7 +232,7 @@
     }
     &__info,
     &__info-title,
-    &__info-tel{
+    &__info-tel {
       text-align: center;
     }
     &__map {
