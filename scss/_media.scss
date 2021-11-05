@@ -142,6 +142,7 @@
       row-gap: 15px;
     }
     &__card {
+      width: 100%;
       padding: 25px 15px;
     }
     &__card-logo {
@@ -314,6 +315,7 @@
       row-gap: 10px;
     }
     &__card {
+      width: 100%;
       display: flex;
       column-gap: 20px;
       align-items: center;
@@ -335,6 +337,9 @@
     }
     &__link-box {
       display: none;
+    }
+    .slick-initialized .slick-slide {
+      display: block;
     }
   }
   .portfolio-slider {
@@ -505,12 +510,21 @@
   }
   .portfolio-slider {
     &__content {
-      width: 288px;
+      width: 288px !important;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
     }
     &__info-text {
-      font-size: 18px;
+      font-size: 19px;
       line-height: 24px;
       text-align: left;
+      font-size: 19px;
+    }
+    .slick-initialized .slick-slide {
+      display: block !important;
     }
   }
   .catalog {

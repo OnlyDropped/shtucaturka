@@ -1133,6 +1133,7 @@ a {
     row-gap: 15px;
   }
   .why-me__card {
+    width: 100%;
     padding: 25px 15px;
   }
   .why-me__card-logo {
@@ -1310,6 +1311,7 @@ a {
     row-gap: 10px;
   }
   .why-me__card {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1336,6 +1338,9 @@ a {
   }
   .portfolio__link-box {
     display: none;
+  }
+  .portfolio .slick-initialized .slick-slide {
+    display: block;
   }
   .portfolio-slider__content {
     width: 315px;
@@ -1515,12 +1520,21 @@ a {
             transform: translateX(170px);
   }
   .portfolio-slider__content {
-    width: 288px;
+    width: 288px !important;
+  }
+  .portfolio-slider__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
   }
   .portfolio-slider__info-text {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 24px;
     text-align: left;
+    font-size: 19px;
+  }
+  .portfolio-slider .slick-initialized .slick-slide {
+    display: block !important;
   }
   .catalog {
     padding: 150px 0 50px;

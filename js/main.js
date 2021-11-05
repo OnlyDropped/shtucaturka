@@ -2,8 +2,8 @@ $('.slider').slick({
     arrows: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 7000,
+    //autoplay: true,
+    //autoplaySpeed: 7000,
     prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg" alt=""></button>',
     draggable: false,
@@ -44,8 +44,8 @@ $('.slider').slick({
             arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '10px'
+            centerMode: false,
+            centerPadding: '20px'
         }
     },
           {
